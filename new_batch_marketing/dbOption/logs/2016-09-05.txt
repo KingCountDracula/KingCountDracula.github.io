@@ -1,0 +1,48 @@
+Time : 11:25:03
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'D0827094315C' in 'where clause'
+Raw SQL : SELECT c.area, c.customer_account_id, c.customer_lastName, c.customer_firstName, c.barangay, c.town, c.customer_contact_number,a.contact_num, a.lastname, a.firstname, co.order_date, co.purchase_order_id, co.customer_id, co.processor, cd.delivery_date,cdd.customer_delivery_id, cdd.product_code, cdd.quantity
+	FROM customer_delivery_details AS cdd
+	INNER JOIN customer_delivery AS cd ON cd.customer_delivery_id = cdd.customer_delivery_id
+	INNER JOIN customer_order AS co
+	INNER JOIN customer AS c ON c.customer_account_id = co.customer_id
+	INNER JOIN agent AS a ON a.area = c.area
+	WHERE cdd.customer_delivery_id = D0827094315C
+
+Time : 11:21:43
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'D0827094315C''' at line 7
+Raw SQL : SELECT c.area, c.customer_account_id, c.customer_lastName, c.customer_firstName, c.barangay, c.town, c.customer_contact_number,a.contact_num, a.lastname, a.firstname, co.order_date, co.purchase_order_id, co.customer_id, co.processor, cd.delivery_date,cdd.customer_delivery_id, cdd.product_code, cdd.quantity
+	FROM customer_delivery_details AS cdd
+	INNER JOIN customer_delivery AS cd ON cd.customer_delivery_id = cdd.customer_delivery_id
+	INNER JOIN customer_order AS co
+	INNER JOIN customer AS c ON c.customer_account_id = co.customer_id
+	INNER JOIN agent AS a ON a.area = c.area
+	WHERE cdd.customer_delivery_id = ''D0827094315C''
+
+Time : 03:24:06
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'os.supplier_name' in 'field list'
+Raw SQL : SELECT prod.product_name, prod.product_type, stock.case, os.supplier_id, os.order_date, os.processed_by,os.supplier_name,os.supplier_address,os.supplier_contact_nubmer,osl.product_code, osl.quantity
+							FROM order_supplier_list AS osl
+							INNER JOIN order_supplier AS os ON os.order_supplier_id = osl.order_supplier_id
+							INNER JOIN products AS prod ON prod.product_code = osl.product_code
+							INNER JOIN stocks AS stock ON stock.stock_code = prod.product_code
+							WHERE osl.order_supplier_id = 'O0824063228S'
+
+Time : 03:22:37
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'os.supplier_name' in 'field list'
+Raw SQL : SELECT prod.product_name, prod.product_type, stock.case, os.supplier_id, os.order_date, os.processed_by,os.supplier_name,os.supplier_address,os.supplier_contact_nubmer, osl.product_code, osl.quantity
+							FROM order_supplier_list AS osl
+							INNER JOIN order_supplier AS os ON os.order_supplier_id = osl.order_supplier_id
+							INNER JOIN products AS prod ON prod.product_code = osl.product_code
+							INNER JOIN stocks AS stock ON stock.stock_code = prod.product_code
+							WHERE osl.order_supplier_id = 'O0824063228S'
+
+Time : 03:21:49
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.product_code, osl.quantity
+							FROM order_supplier_list AS osl
+							INNE' at line 1
+Raw SQL : SELECT prod.product_name, prod.product_type, stock.case, os.supplier_id, os.order_date, os.processed_by,os.supplier_name,os.supplier_address,os.supplier_contact_nubmer osl.product_code, osl.quantity
+							FROM order_supplier_list AS osl
+							INNER JOIN order_supplier AS os ON os.order_supplier_id = osl.order_supplier_id
+							INNER JOIN products AS prod ON prod.product_code = osl.product_code
+							INNER JOIN stocks AS stock ON stock.stock_code = prod.product_code
+							WHERE osl.order_supplier_id = 'O0824063228S'

@@ -1,0 +1,43 @@
+Time : 10:47:16
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR = 'OR6348'' at line 1
+Raw SQL : SELECT count(*) FROM sales WHERE OR = 'OR6348'
+
+Time : 03:32:24
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'purchase_order_id' in 'where clause'
+Raw SQL : UPDATE payment SET balance = 4452 WHERE purchase_order_id = 'O160912092502C'
+
+Time : 03:31:19
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'purchase_order_id' in 'where clause'
+Raw SQL : UPDATE payment SET balance = 212 WHERE purchase_order_id = 'O160912092502C'
+
+Time : 03:31:15
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'purchase_order_id' in 'where clause'
+Raw SQL : UPDATE payment SET balance = 212 WHERE purchase_order_id = 'O160912092502C'
+
+Time : 03:28:50
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Raw SQL : UPDATE payment SET balance = 212 WHERE purchase_order_id =
+
+Time : 03:28:46
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Raw SQL : UPDATE payment SET balance = 212 WHERE purchase_order_id =
+
+Time : 03:27:55
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE purchase_order_id =' at line 1
+Raw SQL : UPDATE payment SET balance =  WHERE purchase_order_id =
+
+Time : 03:27:53
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE purchase_order_id =' at line 1
+Raw SQL : UPDATE payment SET balance =  WHERE purchase_order_id =
+
+Time : 03:14:08
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE purchase_order_id =' at line 1
+Raw SQL : UPDATE payment SET balance =  WHERE purchase_order_id =
+
+Time : 03:14:06
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE purchase_order_id =' at line 1
+Raw SQL : UPDATE payment SET balance =  WHERE purchase_order_id =
+
+Time : 03:14:05
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE purchase_order_id =' at line 1
+Raw SQL : UPDATE payment SET balance =  WHERE purchase_order_id =

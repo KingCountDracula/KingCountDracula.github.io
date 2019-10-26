@@ -1,0 +1,51 @@
+Time : 06:47:16
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bottle_per_case' in 'field list'
+Raw SQL : SELECT product_code, product_name, product_type, bottle_per_case, unit_price, selling_price FROM products where product_code = 'CKCL7234'
+
+Time : 06:33:52
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'customer_account_id'' at line 1
+Raw SQL : SELECT count(*) as count FROM customer WHERE   = 'customer_account_id'
+
+Time : 06:33:20
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'customer_account_id'' at line 1
+Raw SQL : SELECT count(*) as count FROM customer WHERE   = 'customer_account_id'
+
+Time : 06:32:56
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'customer_account_id'' at line 1
+Raw SQL : SELECT count(*) as count FROM customer WHERE   = 'customer_account_id'
+
+Time : 06:31:47
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'customer_account_id'' at line 1
+Raw SQL : SELECT count(*) as count FROM customer WHERE   = 'customer_account_id'
+
+Time : 06:29:22
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'customer_account_id'' at line 1
+Raw SQL : SELECT count(*) as count FROM customer WHERE   = 'customer_account_id'
+
+Time : 05:12:46
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'CKZERO' for key 'PRIMARY'
+Raw SQL : INSERT INTO stocks (stock_code) values ('CKZERO')
+
+Time : 03:03:01
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'CKZERO' for key 'PRIMARY'
+Raw SQL : INSERT INTO stocks (stock_code) values ('CKZERO')
+
+Time : 02:48:46
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'CKZERO' for key 'PRIMARY'
+Raw SQL : INSERT INTO stocks (stock_code) values ('CKZERO')
+
+Time : 02:46:35
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'CKZERO' for key 'PRIMARY'
+Raw SQL : INSERT INTO stocks (stock_code) values ('CKZERO')
+
+Time : 02:45:06
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'CKZERO' for key 'PRIMARY'
+Raw SQL : INSERT INTO stocks (stock_code) values ('CKZERO')
+
+Time : 02:44:19
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'CKZERO' for key 'PRIMARY'
+Raw SQL : INSERT INTO stocks (stock_code) values ('CKZERO')
+
+Time : 02:41:12
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'CKZERO' for key 'PRIMARY'
+Raw SQL : INSERT INTO stocks (stock_code) values ('CKZERO')

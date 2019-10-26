@@ -1,0 +1,6 @@
+Time : 12:41:48
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2016-09-20' at line 4
+Raw SQL : SELECT c.customer_firstName, c.customer_lastName, co.purchase_order_id, co.case, co.amount
+FROM customer_order AS co
+INNER JOIN customer AS c ON c.customer_account_id = co.customer_id
+AND  co.delivery_date ='2016-09-20

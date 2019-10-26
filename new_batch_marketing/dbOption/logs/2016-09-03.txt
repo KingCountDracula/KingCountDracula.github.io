@@ -1,0 +1,71 @@
+Time : 16:59:10
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'O0903124250C' for key 'PRIMARY'
+Raw SQL : INSERT INTO customer_order(`purchase_order_id`,`customer_id`,`order_date`,`case`,`amount`,`delivery_date`,`processor`) VALUES('O0903124250C','1','2016-09-03',20,4381,'September-06-2016','ADMIN')
+
+Time : 16:51:38
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'
+Raw SQL : INSERT INTO order_shortage(`prod_code`,`quantity`,`date`) VALUES('',3,'09-03-2016')
+
+Time : 16:11:37
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+Raw SQL : INSERT INTO temporary_order_shortage(`id`,`prod_code`,`quantity`) VALUES(NULL,'CK12SKT',)
+
+Time : 15:14:54
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1)' at line 1
+Raw SQL : INSERT INTO `temporary_customer_order`(`id`,`product_code`,`product_name`,`product_type`,`selling_price`,`amount`,`case`) values(NULL,'CK0111L','Coke','Litro',300,,1)
+
+Time : 15:14:41
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2)' at line 1
+Raw SQL : INSERT INTO `temporary_customer_order`(`id`,`product_code`,`product_name`,`product_type`,`selling_price`,`amount`,`case`) values(NULL,'CK168OZ','Coke','8OZ',179,,2)
+
+Time : 15:14:10
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2')' at line 1
+Raw SQL : INSERT INTO `temporary_customer_order`(`id`,`product_code`,`product_name`,`product_type`,`selling_price`,`amount`,`case`) values(NULL,'SP228OZ','Sprite','8OZ',189,,'2')
+
+Time : 15:13:49
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2)' at line 1
+Raw SQL : INSERT INTO `temporary_customer_order`(`id`,`product_code`,`product_name`,`product_type`,`selling_price`,`amount`,`case`) values(NULL,'SP228OZ','Sprite','8OZ',189,,2)
+
+Time : 15:12:07
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2)' at line 1
+Raw SQL : INSERT INTO temporary_customer_order(`id`,`product_code`,`product_name`,`product_type`,`selling_price`,`amount`,`case`) values(NULL,'CK0111L','Coke','Litro',300,,2)
+
+Time : 15:11:01
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2)' at line 1
+Raw SQL : INSERT INTO temporary_customer_order(`id`,`product_code`,`product_name`,`product_type`,`selling_price`,`amount`,`case`) values(NULL,'SP2315L','Sprite','1.5L',379,,2)
+
+Time : 15:01:24
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2)' at line 1
+Raw SQL : INSERT INTO temporary_customer_order(`id`,`product_code`,`product_type`,`product_type`,`selling_price`,`amount`,`case`) values(NULL,'SP2315L','Sprite','1.5L',379,,2)
+
+Time : 14:50:32
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2)' at line 1
+Raw SQL : INSERT INTO temporary_customer_order(`id`,`product_code`,`product_type`,`product_type`,`selling_price`,`amount`,`case`) values(NULL,'SP2315L','Sprite','1.5L',379,,2)
+
+Time : 14:49:00
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'case) values(NULL,'SP2315L','Sprite','1.5L',379,,2)' at line 1
+Raw SQL : INSERT INTO temporary_customer_order(id,product_code,product_type,product_type,selling_price,amount,case) values(NULL,'SP2315L','Sprite','1.5L',379,,2)
+
+Time : 14:37:05
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2)' at line 1
+Raw SQL : INSERT INTO temporary_customer_order(`id`,`product_code`,`product_name`, `product_type`,`selling_price`,`amount`,`case`) VALUES(NULL,'SP2315L','Sprite', '1.5L',379,,2)
+
+Time : 14:36:14
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2)' at line 1
+Raw SQL : INSERT INTO temporary_customer_order(`id`,`product_code`,`product_name`, `product_type`,`selling_price`,`amount`,`case`) VALUES(NULL,'CK12SKT','Coke', 'Sakto',110,,2)
+
+Time : 14:33:38
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2)' at line 1
+Raw SQL : INSERT INTO temporary_customer_order(`id`,`product_code`,`product_name`, `product_type`,`selling_price`,`amount`,`case`) VALUES(NULL,'SP2315L','Sprite', '1.5L',379,,2)
+
+Time : 14:30:57
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+Raw SQL : INSERT INTO temporary_order_shortage(`id`,`prod_code`,`quantity`) VALUES(NULL,'SP2315L',)
+
+Time : 14:30:16
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+Raw SQL : INSERT INTO temporary_order_shortage(`id`,`prod_code`,`quantity`) VALUES(NULL,'SP2315L',)
+
+Time : 14:29:35
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+Raw SQL : INSERT INTO temporary_order_shortage(`id`,`prod_code`,`quantity`) VALUES(NULL,'RY328OZ',)

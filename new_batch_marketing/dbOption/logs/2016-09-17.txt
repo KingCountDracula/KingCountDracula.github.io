@@ -1,0 +1,12 @@
+Time : 17:13:59
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'payment WHERE transaction_id = 'CC160915043111C'' at line 1
+Raw SQL : SELECT * payment WHERE transaction_id = 'CC160915043111C'
+
+Time : 16:54:42
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.customer_id' in 'field list'
+Raw SQL : SELECT c.customer_id,c.customer_firstName, c.customer_lastName, p.transaction_id,p.customer_order_id,p.balance
+FROM payment AS p
+INNER JOIN customer_order AS co
+INNER JOIN customer AS c ON c.customer_account_id = co.customer_id
+WHERE co.purchase_order_id = p.customer_order_id
+AND p.balance > 0

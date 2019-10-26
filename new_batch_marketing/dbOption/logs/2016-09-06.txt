@@ -1,0 +1,8 @@
+Time : 04:58:29
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT a.lastname, a.firstname, a.contact_num, c.customer_firstName, c.customer_' at line 1
+Raw SQL : SELECT SELECT a.lastname, a.firstname, a.contact_num, c.customer_firstName, c.customer_lastName, c.barangay, c.town, cd.customer_delivery_id,cd.delivery_date, cd.delivered_by, co.order_date, co.purchase_order_id, co.customer_id
+	FROM customer_order AS co
+	INNER JOIN customer_delivery AS cd ON cd.purchase_order_id = co.purchase_order_id
+	INNER JOIN customer AS c ON c.customer_account_id = co.customer_id
+	INNER JOIN agent AS a ON a.area = c.area
+	WHERE cd.customer_delivery_id = 'D0904100025C'

@@ -1,0 +1,32 @@
+Time : 17:02:26
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ']'' at line 1
+Raw SQL : UPDATE `customer_delivery` SET `status` = 'CREDIT' WHERE `purchase_order_id` = 'O0904082841C']'
+
+Time : 16:58:22
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ']'' at line 1
+Raw SQL : UPDATE `customer_delivery` SET `status` = 'CLEARED' WHERE `purchase_order_id` = 'O0904082841C']'
+
+Time : 12:19:21
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cd.delivery_date' in 'field list'
+Raw SQL : SELECT a.lastname, a.firstname, a.contact_num,c.customer_account_id,c.customer_firstName, c.customer_lastName, c.barangay, c.town, c.customer_contact_number, cd.customer_delivery_id, cd.delivery_date, cd.delivered_by, co.order_date, co.purchase_order_id, co.customer_id
+FROM customer_order AS co
+INNER JOIN customer_delivery AS cd ON cd.purchase_order_id = co.purchase_order_id
+INNER JOIN customer AS c ON c.customer_account_id = co.customer_id
+INNER JOIN agent AS a ON a.area = c.area
+WHERE cd.customer_delivery_id = 'D0906081716C'
+
+Time : 11:10:33
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'amount' in 'field list'
+Raw SQL : INSERT INTO sales(`transaction_id`,`OR`,`order_id`,`customer_id`,`amount`,`date`) VALUES('CA0907110917SH','CJ9394KJ','O0904084656C',21,'16259','2016-09-07')
+
+Time : 11:09:31
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+Raw SQL : INSERT INTO sales(`transaction_id`,`OR`,`order_id`,`customer_id`,`customer_id`,`amount`,`date`) VALUES('CA0907110917SH','CJ9394KJ','O0904084656C',21,'16259','2016-09-07')
+
+Time : 11:07:23
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''16259','2016-09-07')' at line 1
+Raw SQL : INSERT INTO sales(`transaction_id`,`OR`,`order_id`,`customer_id`,`customer_id`,`amount`,`date`) VALUES('CA0907105250SH','CJ9394KJ','O0904084656C',,'16259','2016-09-07')
+
+Time : 11:05:12
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''','2016-09-07')' at line 1
+Raw SQL : INSERT INTO sales(`transaction_id`,`OR`,`order_id`,`customer_id`,`customer_id`,`amount`,`date`) VALUES('CA0907105250SH','CJ9394KJ','O0904084656C',,'','2016-09-07')

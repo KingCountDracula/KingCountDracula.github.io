@@ -1,0 +1,6 @@
+Time : 15:18:52
+SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'p'
+Raw SQL : SELECT p.balance,co.purchase_order_id,co.delivery_date,co.status,co.flag,p.balance FROM payment as p
+          INNER JOIN customer_order AS co ON co.purchase_order_id = p.customer_order_id 
+          INNER JOIN payment AS p ON p.customer_order_id = co.purchase_order_id
+          WHERE co.status = 'CREDIT'

@@ -1,0 +1,15 @@
+Time : 03:18:08
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'customer_order_id' in 'where clause'
+Raw SQL : SELECT * FROM customer_order WHERE customer_order_id = 'O160913045527C' AND status = 'CREDTI'
+
+Time : 02:52:31
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'customer_order_id' in 'where clause'
+Raw SQL : SELECT * FROM customer_order WHERE customer_order_id = 'O160913045527C' AND status = 'CREDTI'
+
+Time : 02:52:05
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'customer_order_id' in 'where clause'
+Raw SQL : SELECT * FROM customer_order WHERE customer_order_id = 'O160913045527C' AND status = 'CREDTI'
+
+Time : 02:05:59
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'customer_order_id' in 'where clause'
+Raw SQL : SELECT * FROM customer_order WHERE customer_order_id = 'utang_id' AND status = 'CREDTI'
